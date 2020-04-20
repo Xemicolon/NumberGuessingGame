@@ -10,7 +10,7 @@ def guessTheNumber(difficulty, range, chances):
         try:
             user_input = int(input(f'Guess the number: '))
             chances -= 1
-            print(f'You have {chances} left.')
+            print(f'Chances you have left: {chances}')
             if user_input == computer:
                 print(f'✅ You got it right!')
                 break
