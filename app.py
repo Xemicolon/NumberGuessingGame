@@ -6,11 +6,11 @@ while True:
     user_input = str(input(
         'There are 3 levels: easy, medium, hard. \nType "easy", "medium" or "hard" to select difficulty level \nor \n"quit" to end the game. \n>_ ')).lower()
     if user_input == 'easy':
-        guessTheNumber('easy', 10, 6)
+        guessTheNumber(user_input, 10, 6)
     elif user_input == 'medium':
-        guessTheNumber('medium', 20, 4)
+        guessTheNumber(user_input, 20, 4)
     elif user_input == 'hard':
-        guessTheNumber('hard', 50, 3)
+        guessTheNumber(user_input, 50, 3)
     elif user_input == 'quit':
         print(f'See you next time ✌')
         break
