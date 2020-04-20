@@ -1,11 +1,10 @@
-from random import randint
 from guess import guessTheNumber
 
 
 while True:
     print(f'Welcome to the Number guessing game 😎\n')
     user_input = str(input(
-        'There are 3 levels: easy, medium, hard. \nType "easy", "medium" or "hard" to select difficulty level \nor \ntype "quit" to end the game. \n>_  '))
+        'There are 3 levels: easy, medium, hard. \nType "easy", "medium" or "hard" to select difficulty level \nor \n"quit" to end the game. \n>_ ')).lower()
     if user_input == 'easy':
         guessTheNumber('easy', 10, 6)
     elif user_input == 'medium':

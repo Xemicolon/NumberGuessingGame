@@ -1,3 +1,6 @@
+from random import randint
+
+
 def guessTheNumber(difficulty, range, chances):
     computer = randint(1, range)
     level = str(difficulty)
@@ -17,4 +20,4 @@ def guessTheNumber(difficulty, range, chances):
                     print(f'Game over! You exhausted your chances 😖\n')
                     break
         except ValueError:
-            print(f'⚠ Invalid number! Please enter a valid number.')
+            print(f'⚠ Please enter a whole number or integer.')
