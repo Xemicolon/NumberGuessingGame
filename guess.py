@@ -8,7 +8,7 @@ def guessTheNumber(difficulty, range, chances):
     print(f'Difficulty level: {level}\nChances: {chances}')
     while True:
         try:
-            user_input = int(input(f'Guess the number: '))
+            user_input = int(input(f'Guess the number between 1 - {range}: '))
             chances -= 1
             print(f'Chances you have left: {chances}')
             if user_input == computer:
